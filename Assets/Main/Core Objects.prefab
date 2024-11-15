@@ -343,6 +343,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4862617928953239598, guid: a1572fcd64bc48e45b7a29c142b0a009, type: 3}
+      propertyPath: m_VerticalAxis.m_MaxSpeed
+      value: 744.3734
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862617928953239598, guid: a1572fcd64bc48e45b7a29c142b0a009, type: 3}
+      propertyPath: m_HorizontalAxis.m_MaxSpeed
+      value: 744.3734
+      objectReference: {fileID: 0}
     - target: {fileID: 5909162725679463292, guid: a1572fcd64bc48e45b7a29c142b0a009, type: 3}
       propertyPath: m_Name
       value: Virtual Camera
@@ -442,6 +450,10 @@ PrefabInstance:
       propertyPath: _actionHint
       value: 
       objectReference: {fileID: 8568285291051746297}
+    - target: {fileID: 1942926790857267149, guid: 58d9ec2e323276d43843efb225fa2c17, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 7577921883243544897, guid: 58d9ec2e323276d43843efb225fa2c17, type: 3}
       propertyPath: m_LocalPosition.x
       value: -860.1342
