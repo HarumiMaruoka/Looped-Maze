@@ -7,6 +7,8 @@ public class ItemCollector : MonoBehaviour
     private float _detectionRange = 5f;
     [SerializeField]
     private GameObject _actionHint;
+    [SerializeField]
+    private LayerMask _itemLayer;
 
     private Camera mainCamera;
 
@@ -33,7 +35,7 @@ public class ItemCollector : MonoBehaviour
         RaycastHit hit;
 
         // レイキャストを行い、中央にあるオブジェクトを判定
-        if (Physics.Raycast(ray, out hit, _detectionRange))
+        if (Physics.Raycast(ray, out hit, _detectionRange, _itemLayer))
         {
             // アイテムタグを持つオブジェクトかどうかを判定
             if (hit.transform.TryGetComponent(out Item item))

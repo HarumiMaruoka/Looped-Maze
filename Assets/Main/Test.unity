@@ -460,7 +460,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06c589dc91b82047a17e5354d3caf46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 1
 --- !u!1 &1052294238
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +704,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06c589dc91b82047a17e5354d3caf46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 2
 --- !u!1001 &2082806854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -714,9 +712,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3260900000387073467, guid: abc00000000007697647185962234722, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: abc00000000007697647185962234722, type: 3}
       propertyPath: m_Name
       value: Sample Item (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: abc00000000007697647185962234722, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: abc00000000007697647185962234722, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: abc00000000007697647185962234722, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: abc00000000007697647185962234722, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: abc00000000007697647185962234722, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: abc00000000007697647185962234722, type: 3}
       propertyPath: m_LocalScale.x
@@ -845,7 +867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06c589dc91b82047a17e5354d3caf46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 0
 --- !u!1001 &2131044979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -854,10 +875,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2431816860609524572, guid: 5a1d092044add3244a03c8184e2b8fbb, type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
     - target: {fileID: 4221645806752731142, guid: 5a1d092044add3244a03c8184e2b8fbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 862.24524
@@ -901,14 +918,6 @@ PrefabInstance:
     - target: {fileID: 4836874450263579844, guid: 5a1d092044add3244a03c8184e2b8fbb, type: 3}
       propertyPath: m_Name
       value: Core Objects
-      objectReference: {fileID: 0}
-    - target: {fileID: 6484463345585482732, guid: 5a1d092044add3244a03c8184e2b8fbb, type: 3}
-      propertyPath: m_VerticalAxis.m_MaxSpeed
-      value: 744.3734
-      objectReference: {fileID: 0}
-    - target: {fileID: 6484463345585482732, guid: 5a1d092044add3244a03c8184e2b8fbb, type: 3}
-      propertyPath: m_HorizontalAxis.m_MaxSpeed
-      value: 744.3734
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

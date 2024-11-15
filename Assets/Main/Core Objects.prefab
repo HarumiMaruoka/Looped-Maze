@@ -450,6 +450,10 @@ PrefabInstance:
       propertyPath: _actionHint
       value: 
       objectReference: {fileID: 8568285291051746297}
+    - target: {fileID: 1209268485737991274, guid: 58d9ec2e323276d43843efb225fa2c17, type: 3}
+      propertyPath: _itemLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1942926790857267149, guid: 58d9ec2e323276d43843efb225fa2c17, type: 3}
       propertyPath: m_Constraints
       value: 112
