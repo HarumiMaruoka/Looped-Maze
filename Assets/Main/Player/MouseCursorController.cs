@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 public class MouseCursorController : MonoBehaviour
 {
     [SerializeField]
+    private PlayerMovement _playerMovement;
+    [SerializeField]
     private CinemachineVirtualCamera _cinemachineVirtualCamera;
     [SerializeField]
     private GameObject _ui;
@@ -15,6 +17,7 @@ public class MouseCursorController : MonoBehaviour
         Config.OnMouseSensitivityChanged += OnMouseSensitivityChanged;
 
         OnMouseSensitivityChanged(Config.MouseSensitivity);
+        UnlockCursor();
     }
 
     private void Update()
@@ -42,12 +45,16 @@ public class MouseCursorController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        _cinemachineVirtualCamera.enabled = true;
+        _playerMovement.enabled = true;
     }
 
     public void UnlockCursor()
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        _cinemachineVirtualCamera.enabled = false;
+        _playerMovement.enabled = false;
     }
 
     private void OnGameCleared()

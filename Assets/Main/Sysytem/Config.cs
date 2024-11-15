@@ -5,6 +5,7 @@ public static class Config
 {
     private static string _audioVolumeKey = "audioVolume";
     private static string _mouseSensitivityKey = "mouseSensitivity";
+    private static string _crosshairVisibilityKey = "crosshairVisibility";
 
     public static float AudioVolume
     {
@@ -22,5 +23,16 @@ public static class Config
         }
     }
 
+    public static bool CrosshairVisibility
+    {
+        get => PlayerPrefs.GetInt(_crosshairVisibilityKey, 1) == 1;
+        set
+        {
+            PlayerPrefs.SetInt(_crosshairVisibilityKey, value ? 1 : 0);
+            OnCrosshairVisibilityChanged?.Invoke(value);
+        }
+    }
+
     public static event Action<float> OnMouseSensitivityChanged;
+    public static event Action<bool> OnCrosshairVisibilityChanged;
 }
