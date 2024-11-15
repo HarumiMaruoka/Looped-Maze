@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 395878796429939754}
   - component: {fileID: 85667343991790411}
   - component: {fileID: 5998060208165044985}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Doorway_Bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 6583602235620560253}
   - component: {fileID: 274958755587440586}
   - component: {fileID: 4394720154029622837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Doorway_Bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}

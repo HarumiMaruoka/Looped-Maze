@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6201103549934597279}
   - component: {fileID: 8053674591070622427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Wall_Bedroom_2x3_03m_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 1558562665167291160}
   - component: {fileID: 7546930519989042712}
   - component: {fileID: 630026984558194552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SM_Wall_Bedroom_2x3_03m
   m_TagString: Untagged
   m_Icon: {fileID: 0}
