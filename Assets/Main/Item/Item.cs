@@ -3,16 +3,14 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    [SerializeField] private int _id;
-
     private void Start()
     {
-        GameSystem.Instance.RegisterItem(_id);
+        GameSystem.Instance.RegisterItem(this);
     }
 
     internal void Collect()
     {
-        GameSystem.Instance.CollectItem(_id);
+        GameSystem.Instance.CollectItem(this);
         Destroy(gameObject);
     }
 }

@@ -8,7 +8,7 @@ public class GameSystem
     public static GameSystem Instance { get; } = new GameSystem();
     private GameSystem() { }
 
-    private HashSet<int> _itemList = new HashSet<int>();
+    private HashSet<Item> _itemList = new HashSet<Item>();
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Initialize()
@@ -21,20 +21,20 @@ public class GameSystem
         Instance.Reset();
     }
 
-    public void RegisterItem(int id)
+    public void RegisterItem(Item item)
     {
         // アイテムを登録し、重複チェックを行う。
-        if (!_itemList.Add(id))
+        if (!_itemList.Add(item))
         {
-            Debug.LogError($"Item {id} already exists.");
+            Debug.LogError($"Item {item} already exists.");
         }
     }
 
-    private HashSet<int> _collectedItems = new HashSet<int>();
+    private HashSet<Item> _collectedItems = new HashSet<Item>();
 
-    public void CollectItem(int id)
+    public void CollectItem(Item item)
     {
-        _collectedItems.Add(id);
+        _collectedItems.Add(item);
 
         if (_itemList.Count == _collectedItems.Count)
         {
